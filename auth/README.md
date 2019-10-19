@@ -1,6 +1,6 @@
 # GitHub Action for Google Cloud Auth
 
-The GitHub Actions for [Google Cloud Platform](https://cloud.google.com/) and wraps the [gcloud SDK](https://cloud.google.com/sdk/) for authorizing a service account. This is a thin wrapper around the `gcloud auth` command, facilitating providing credentials securely using [Secrets](https://developer.github.com/actions/creating-workflows/storing-secrets/).
+The GitHub Actions for [Google Cloud Platform](https://cloud.google.com/) and wraps the [gcloud SDK](https://cloud.google.com/sdk/) for authorizing a service account. This is a thin wrapper around the `gcloud auth` command, facilitating providing credentials securely using [Secrets](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables).
 
 ## Usage
 
@@ -26,7 +26,7 @@ Subsequent actions in the workflow will then be able to use `gcloud` as that use
 
 * `GCLOUD_AUTH` **Required** Base64 encoded service account key exported as JSON
    - For information about service account keys please see the [Google Cloud docs](https://cloud.google.com/sdk/docs/authorizing)
-   - For information about using Secrets in Actions please see the [Actions docs](https://developer.github.com/actions/creating-workflows/storing-secrets/).
+   - For information about using Secrets in Actions please see the [Actions docs](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables).
 
 Example on encoding from a terminal : `base64 ~/<account_id>.json`
 
